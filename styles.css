@@ -13,6 +13,7 @@ header {
     color: #fff;
     padding: 1rem;
     text-align: center;
+    animation: fadeIn 2s ease-in-out;
 }
 
 header h1 {
@@ -26,6 +27,7 @@ main {
 
 section {
     margin-bottom: 2rem;
+    animation: fadeIn 1.5s ease-in-out;
 }
 
 section h2 {
@@ -54,4 +56,29 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+    background: linear-gradient(120deg, #333, #444);
+    color: #fff;
+}
+
+body.dark-mode header {
+    background-color: #222;
+}
+
+body.dark-mode ul li {
+    background: #555;
+    color: #fff;
+}
+
+/* Add animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
